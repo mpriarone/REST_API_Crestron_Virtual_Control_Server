@@ -6,7 +6,7 @@ REM *************************************************************************
 ECHO Starting VC4 API - Modify Program Library Entry
 
 REM Load variables from settings.txt
-IF EXIST settings.txt (
+IF EXIST VC4_API\settings.txt (
     FOR /F "tokens=1,2 delims==" %%A IN (settings.txt) DO (
         SET %%A=%%B
     )
