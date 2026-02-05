@@ -25,7 +25,7 @@ ECHO.
 
 ECHO Modify Program Library Entry for ProgramID %ProgramID% with FriendlyName %FriendlyName% with new CH5Z
 REM Modify existing CH5
-REM Nota: Usiamo -F (form) invece di -d (data) per gestire correttamente il file e i campi multipart
+REM Note: We use -F (form) instead of -d (data) to correctly handle the file and multipart fields
 curl -k -X PUT "https://%IP%/VirtualControl/config/api/ProgramLibrary" ^
      -H "accept: application/json" ^
      -H "Authorization: %Token%" ^
