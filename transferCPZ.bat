@@ -5,16 +5,15 @@ REM * Use -v for call debugging                                             *
 REM *************************************************************************
 ECHO Starting VC4 API - Modify Program Library Entry
 
-REM Load variables from settings.txt
-IF EXIST VC4_API\settings.txt (
-    FOR /F "tokens=1,2 delims==" %%A IN (settings.txt) DO (
-        SET %%A=%%B
-    )
-) ELSE (
-    ECHO Error: settings.txt not found!
-    PAUSE
-    EXIT /B
-)
+REM These variables must by changed referencing your system
+SET IP="192.168.1.56"
+SET Token="XXXX"
+Set FriendlyName="Main"
+Set ProgramID="11"
+Set Notes=For Testing - Updated via API
+Set AppFile="..\bin\Debug\net8.0\HyperionCore.cpz"
+Set WebxPanelFile="..\..\Construct\Room\output\Room.ch5z"
+Set ProgramInstanceId="MAIN"
 
 REM Get Authorizations groups
 REM curl -k -X GET "https://%IP%/VirtualControl/config/api/Authentication" -H "accept: application/json" -H "Authorization: %Token%"
