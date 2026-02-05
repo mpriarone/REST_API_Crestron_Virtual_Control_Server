@@ -11,8 +11,7 @@ SET Token="XXXX"
 Set FriendlyName="Main"
 Set ProgramID="11"
 Set Notes=For Testing - Updated via API
-Set AppFile="..\bin\Debug\net8.0\HyperionCore.cpz"
-Set WebxPanelFile="..\..\Construct\Room\output\Room.ch5z"
+Set AppFile=".\bin\Debug\net8.0\HyperionCore.cpz"
 Set ProgramInstanceId="MAIN"
 
 REM Get Authorizations groups
